@@ -22,7 +22,7 @@ In the Ubuntu system, open the *Terminal* application and type the following com
 
 2. Download OpenWrt CC source codes:
     ```
-    $ git clone git://git.openwrt.org/15.05/openwrt.git
+    $ git clone https://github.com/openwrt/chaos_calmer.git
     ```
     
 3. Prepare the default configuration file for feeds:
@@ -34,7 +34,7 @@ In the Ubuntu system, open the *Terminal* application and type the following com
 4. Add the LinkIt Smart 7688 feed:
     
     ```
-    $ echo src-git linkit https://github.com/Torchwoods/linkit-smart-mt76x8an.git >> feeds.conf
+    $ echo src-git linkit https://github.com/moovida-me/linkit-smart-mt76x8.git >> feeds.conf
     ```
 5. Update the feed information of all available packages for building the firmware:
     
