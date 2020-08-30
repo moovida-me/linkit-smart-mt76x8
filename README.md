@@ -1,16 +1,6 @@
-# linkit-smart-feed
-This feeds holds the SDK wifi driver and the config/meta package for the LinkIt Smart 7688 (Duo)
-
 # Build the firmware from sources
 
 This section describes how to build the firmware for LinkIt Smart 7688 and LinkIt Smart 7688 Duo from source codes.
-
-
-### Host environment
-The following operations are performed under a Ubuntu LTS 14.04.3 environment. For a Windows or a Mac OS X host computer, you can install a VM for having the same environment:
-* Download Ubuntu 14.04.3 LTS image from [http://www.ubuntu.com](http://www.ubuntu.com)
-* Install this image with VirtualBox (http://virtualbox.org) on the host machine. 50GB disk space reserved for the VM is recommanded
-
 
 ### Steps
 In the Ubuntu system, open the *Terminal* application and type the following commands:
@@ -61,7 +51,7 @@ In the Ubuntu system, open the *Terminal* application and type the following com
     ```
     $ make V=99
     ```
-9. After the build process completes, the resulted firmware file will be under `bin/ramips/openwrt-ramips-mt7688-LinkIt7688-squashfs-sysupgrade.bin`. Depending on the H/W resources of the host environment, the build process may **take more than 2 hours**.
+9. After the build process completes, the resulted firmware file will be under `bin/ramips/openwrt-ramips-mt7688-LinkIt7688-squashfs-sysupgrade.bin`. 
 
 10. You can use this file to do the firmware upgrade through the Web UI. Or rename it to `lks7688.img` for upgrading through a USB drive.
 
